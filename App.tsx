@@ -25,6 +25,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './src/screens/Home/Home';
 import StackNavigator from './src/navigation/StackNavigator';
 
+
 const Stack = createNativeStackNavigator();
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
