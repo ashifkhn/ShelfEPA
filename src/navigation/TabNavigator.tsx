@@ -35,8 +35,9 @@ export function MyTabs() {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
+        headerShown:false,
         tabBarStyle: {
-
+          
           // backgroundColor: "#1F2B42",
           height:screenSize().screenHeight*0.085,
           borderTopRightRadius:25,
@@ -67,10 +68,10 @@ export function MyTabs() {
       tabBarOptions={tabBarOptions}
       tabBarStyle={{ height: 100 }} // Adjust the height as needed
     >
-      <Tab.Screen name="Home" component={Home} options={{ headerShown: false }}/>
-      <Tab.Screen name="Wallet" component={Wallet} options={{ headerShown: false }}/>
-      <Tab.Screen name="Guide" component={GuideTabs} options={{ headerShown: false }}/>
-      <Tab.Screen name="Chart" component={Chart} options={{ headerShown: false }}/>
+      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Wallet" component={Wallet} />
+      <Tab.Screen name="Guide" component={GuideTabs} />
+      <Tab.Screen name="Chart" component={Chart} />
     </Tab.Navigator>
   );
 }

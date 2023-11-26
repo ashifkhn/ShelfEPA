@@ -14,4 +14,12 @@ const screenSize = () => {
   };
 };
 
+export function getDate(param: number) {
+  const currentDate = new Date();
+  const yesterday = new Date(currentDate);
+  yesterday.setDate(currentDate.getDate() +param);
+  const options = { day: 'numeric', month: 'short' };
+  return yesterday.toLocaleDateString(undefined, options);
+}
+
 export default screenSize;
