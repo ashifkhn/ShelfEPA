@@ -18,6 +18,9 @@ npm start
 # OR using Yarn
 yarn start
 ```
+# test
+npm test
+```
 
 ## Step 2: Start your Application
 
