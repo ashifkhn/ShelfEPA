@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "white",
+      "flex": 1,
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "marginBottom": 20,
+        "marginTop": 50,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#0373F3",
+          "fontSize": 24,
+          "textAlign": "center",
+        }
+      }
+    >
+      Expense Chart
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#0373F3",
+          "borderRadius": 10,
+          "borderWidth": 1,
+          "marginTop": 20,
+          "padding": 20,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#0373F3",
+            "fontSize": 16,
+          }
+        }
+      >
+        Your Chart Goes Here
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "marginTop": 20,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#0373F3",
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      Your expense trend over the last six months
+    </Text>
+  </View>
+</View>
+`;

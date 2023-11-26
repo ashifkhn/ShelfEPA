@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "white",
+      "flex": 1,
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "marginBottom": 30,
+        "marginTop": 50,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#0373F3",
+          "fontSize": 24,
+          "textAlign": "center",
+        }
+      }
+    >
+      Welcome to
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#0373F3",
+            "fontSize": 24,
+            "textAlign": "center",
+          },
+          {
+            "fontWeight": "bold",
+          },
+        ]
+      }
+    >
+      Shelf EPA
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#0373F3",
+          "fontSize": 18,
+          "marginBottom": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      Explore and enjoy the features of your app!
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "#0373F3",
+          "borderRadius": 5,
+          "opacity": 1,
+          "padding": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "white",
+            "fontSize": 16,
+            "textAlign": "center",
+          }
+        }
+      >
+        Get Started
+      </Text>
+    </View>
+  </View>
+</View>
+`;
