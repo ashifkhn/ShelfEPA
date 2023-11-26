@@ -37,16 +37,11 @@ export function MyTabs() {
       screenOptions={({ route }) => ({
         headerShown:false,
         tabBarStyle: {
-          
-          // backgroundColor: "#1F2B42",
           height:screenSize().screenHeight*0.085,
           borderTopRightRadius:25,
           borderTopLeftRadius:25,
           paddingBottom:screenSize().screenScale*5,
           paddingTop:screenSize().screenScale*5,
-          // borderTopColor:"#0A0A0A",
-          // borderWidth:2,
-          // marginTop:useBottomTabBarHeight()
         },
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
@@ -65,7 +60,6 @@ export function MyTabs() {
           return <Icon name={iconName} size={28} color={color} />;
         },
       })}
-      tabBarOptions={tabBarOptions}
       tabBarStyle={{ height: 100 }} // Adjust the height as needed
     >
       <Tab.Screen name="Home" component={Home} />
