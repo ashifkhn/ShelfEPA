@@ -6,7 +6,7 @@ import { styles } from './Today';
 
 const scale= screenSize().fontScale
 
-export const Yesterday = () => {
+export const Tomorrow = () => {
 function getTimeOfDay() {
   const currentHour = new Date().getHours();
   const currentMinutes = new Date().getMinutes();
@@ -105,14 +105,14 @@ function calCulateTimePercentage(){
         </View>
         <View style={styles.barContainer}>
                                 <View>
-                                <View style={{display:"flex",alignItems:"center",justifyContent:"center"}}> 
-                                    <Image source={require("./../../../../assets/Itinenery/filled.png")} style={styles.filledImage}/>
-                                    <Complete/>
-                                     <Image source={require("./../../../../assets/Itinenery/filled.png")}style={styles.filledImage}/>
-                                    <Complete />
-                                     <Image source={require("./../../../../assets/Itinenery/filled.png")} style={styles.filledImage}/>
-                                    <Complete/>
-                                        <Image source={require("./../../../../assets/Itinenery/filled.png")} style={styles.filledImage}/>
+                                    <View style={{display:"flex",alignItems:"center",justifyContent:"center"}}> 
+                                    <View style={styles.circle}/>
+                                    <InComplete/>
+                                    <View style={styles.circle}/>
+                                    <InComplete />
+                                     <View style={styles.circle}/>
+                                    <InComplete/>
+                                     <View style={styles.circle}/>
                                     </View>
                                 </View>
         </View>  
@@ -158,6 +158,6 @@ function calCulateTimePercentage(){
   )
 }
 
-export default Yesterday
+export default Tomorrow
 
 
