@@ -5,57 +5,40 @@
  * @format
  */
 
-import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from './src/screens/Home/Home';
+import React,{useEffect} from 'react';
 import StackNavigator from './src/navigation/StackNavigator';
+import messaging from '@react-native-firebase/messaging';
+import { Alert } from 'react-native';
 
 
-const Stack = createNativeStackNavigator();
+
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+const getDeviceToken = async () => {
+  try {
+    const token = await messaging().getToken();
+    console.log("fcm token: ",token,);
+  } catch (error) {
+    console.error("Error getting device token:", error);
+  }
+};
+
+useEffect(() => {
+  getDeviceToken();
+}, []);
+
+ useEffect(() => {
+    const unsubscribe = messaging().onMessage(async remoteMessage => {
+      Alert.alert(`Nope! Push notification wont wont this way. We'll figure out something else`);
+    });
+
+    return unsubscribe;
+  }, []);
 
   return (
     <StackNavigator/>
   );
 }
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;

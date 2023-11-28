@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1004216461862",
+    "project_id": "shelfepa",
+    "storage_bucket": "shelfepa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004216461862:android:7ca3c12e2771d0375b94e7",
+        "android_client_info": {
+          "package_name": "com.shelfepa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdT_GVcYqcxM1h8NfBCcXDnj17uguOonM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
